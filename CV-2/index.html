@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="full-height">
   <head>
     <title>Portfolio-CV-2 | Bootstrap</title>
-    <script src="https://kit.fontawesome.com/8278dbc5e2.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/8278dbc5e2.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -19,48 +22,88 @@
     />
 
     <style>
+      #main-box{
+        height: 100%;
+      }
+      h1{
+        font-size: 2.6em;
+      }
       #profile-pic {
         width: 100%;
         border-radius: 100%;
       }
-      ul
-      {
-          border: 1px dotted red;
+      ul {
         padding: 0;
-        margin: 0;
       }
-      li{
-          list-style-type: none;
-          text-align: left;
+      li {
+        list-style-type: none;
+        text-align: left;
+      }
+      .full-height{
+        height: 100%;
+        max-height: 100%;
+      }
+      .half-height{
+        height: 50%;
+      }
+      .home-me{
+       /* position:absolute; */
+       /* left: 50%; */
+       /* top: 50%; */
+       /* height: 50%; */
+       /* line-height: 100%; */
+       /* padding: 50% */
+       display: flex;
+        justify-content: center;
+        align-items: center;
       }
     </style>
   </head>
-  <body class="container-fluid border bg-dark text-white">
-    <div class="row">
+  <body class="container-fluid border border-primary bg-dark text-white full-height">
+    <div class="row" id="main-box"> 
+      <!-- Main Box as row -->
       <aside class="col-sm-4 border-right text-center">
-        <div class="profile m-5">
+        <!-- Aside Box/Left column for profile -->
+       
+        <div class="p-5">
           <img
             class="p-2"
             id="profile-pic"
             src="./img/Profile-Pic-1by1.jpeg"
             alt="my profile pic"
           />
-          <h1>Muhammad Asad Saeed</h1>
+          <h4>Muhammad Asad Saeed</h3>
           <p>Web Developer</p>
         </div>
-        <div class="links-button m-5 menu">
-            <ul>
-                <li><a href="#home"><i class="fa fa-home"></i></a>Home</li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
+        <div class="menu pl-5 pr-5 pt-4">
+          <ul>
+            <li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="#about-me"><i class="fa fa-info-circle"></i> About Me</a></li>
+            <li><a href="#education"><i class="fa fa-user-graduate"></i> Education</a></li>
+            <li><a href="#skills"><i class="fa fa-laptop-code"></i> My Skills</a></li>
+            <li><a href="#portfolio"><i class="fa-solid fa-award"></i> Portfolio</a></li>
+            <li><a href="#my-sercices"><i class="fa-solid fa-hand-holding-dollar"></i></i> Services</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-address-card"></i> Contact Me</a></li>
+          </ul>
         </div>
       </aside>
-      <aside class="col-sm-8">content</aside>
+      <aside class="col-sm-8">
+        <!-- Asside Box/Right Column for content  -->
+        <div id="home" class="full-height home-me">
+          <div class="content body-size border h-10 ">home
+            <p>asdasd</p>
+            <p>wetrwertwer</p>
+            <p>gfhdggh</p>
+            <p>cvbnvgfgfhn</p>
+            center working
+            
+
+          </div>
+        </div>
+      </aside>
+      <!-- End Main Box -->
     </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
