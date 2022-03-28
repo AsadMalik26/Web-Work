@@ -46,7 +46,7 @@
       .half-height{
         height: 50%;
       }
-      .home-me{
+      .content-block{
        /* position:absolute; */
        /* left: 50%; */
        /* top: 50%; */
@@ -57,6 +57,26 @@
         justify-content: center;
         align-items: center;
       }
+
+      .key{
+        color: rgb(255, 153, 0);
+      }
+      .fs{
+        font-size: x-large;
+      }
+      .btn-display-right{
+        position: absolute;
+        right: 0%;
+        transform: translate(0%,-50%);
+        top: 50%
+      }
+      .btn-display-left{
+        position: absolute;
+        left: 0%;
+        transform: translate(0%, -50%);
+        top: 50%
+      }
+    
     </style>
   </head>
   <body class="container-fluid border border-primary bg-dark text-white full-height">
@@ -89,20 +109,68 @@
       </aside>
       <aside class="col-sm-8">
         <!-- Asside Box/Right Column for content  -->
-        <div id="home" class="full-height home-me">
-          <div class="content body-size border h-10 ">home
-            <p>asdasd</p>
-            <p>wetrwertwer</p>
-            <p>gfhdggh</p>
-            <p>cvbnvgfgfhn</p>
-            center working
-            
-
+        <div id="home slide" class="full-height content-block d-none">
+          
+          <div class="text-center text-uppercase p-2 w-5">
+            <h2><span class="key">Hello! </span> <span id="name">This is Asad</span></h2>
+            <p class="fs">Frontend Developer</p>
+              <button class="btn btn-success col-12 br-5 rounded-pill" type="button" >Contact Me</button>
           </div>
+
         </div>
+        <div id="about-me slide" class="full-height content-block">
+          
+          <div class="text-left p-5 w-5">
+            <h3><span class="key text-uppercase">Who i am?</span></h3>
+            <h5><span class="value">Hey, this is Asad. I am Frontend Developer. <br>Working on Web designing and development. 
+            <br>I started my web development jorney in start of 2022. 
+            <br>Consistently working and learning new things everyday.
+          <br>My goal is to become professional <span class="key">Full Stack Developer</span>. So i learn and do daily my tasks
+        <br><span class="key">E.g. </span> This portfolio design includes different concepts of <span class="key">frontend web development</span> like positioning, flexing, grid layout etc</span></h5>
+            <!-- <h3><span class="key">Name:</span> <span>Muhammad Asad Saeed</span></h3>
+            <h3><span class="key">Email:</span> <span>am123malikk@gmail.com</span></h3>
+            <h3><span class="key">Phone:</span> <span>+92306-1402623</span></h3>
+            <h3><span class="key">Dob:</span> <span>June 8, 2001</span></h3> -->
+          </div>
+
+        </div>
+        <button class="btn-display-right"><i class="fa-solid fa-angle-right"></i></button>
+        <button class="btn-display-left"><i class="fa-solid fa-angle-left"></i></button>
+        <!-- <button class="carousel-control-next btn-display-right" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span></button> -->
       </aside>
       <!-- End Main Box -->
     </div>
+    <!-- just testing and understanding: below -->
+    <img class="mySlides" src="img_snowtops.jpg" style="width:100%">
+  <img class="mySlides" src="img_lights.jpg" style="width:100%">
+  <img class="mySlides" src="img_mountains.jpg" style="width:100%">
+  <img class="mySlides" src="img_forest.jpg" style="width:100%">
+
+    <!-- Sliding Using JS -->
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        console.log(n + " before loop");
+        var x = document.getElementsByClassName("mySlides");
+        console.log("x length: " + x.length)
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+          console.log(n + "in the loop");
+          console.log(x);
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+      </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
