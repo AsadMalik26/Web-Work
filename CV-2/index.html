@@ -20,7 +20,6 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-
     <style>
       #main-box{
         height: 100%;
@@ -139,8 +138,10 @@
           </div>
 
         </div>
-        <button class="btn-display-right"><i class="fa-solid fa-angle-right"></i></button>
-        <button class="btn-display-left"><i class="fa-solid fa-angle-left"></i></button>
+        <button id="nextSlide" class="btn-display-right"><i class="fa-solid fa-angle-right"></i></button>
+        <button id="prevSlide" class="btn-display-left"><i class="fa-solid fa-angle-left"></i></button>
+
+        <!-- <button id="addBtn">Add Todo</button> -->
         <!-- <button class="carousel-control-next btn-display-right" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span></button> -->
       </aside>
@@ -194,5 +195,8 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./JQ/jquery-3.6.0.min.js"></script>
+    <script src="./JQ/btnController.js"></script>
   </body>
 </html>
