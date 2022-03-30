@@ -2,16 +2,10 @@
 <html lang="en" class="full-height">
   <head>
     <title>Portfolio-CV-2 | Bootstrap</title>
-    <script
-      src="https://kit.fontawesome.com/8278dbc5e2.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/8278dbc5e2.js" crossorigin="anonymous"></script>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
     <!-- Bootstrap CSS -->
     <link
@@ -20,63 +14,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <style>
-      #main-box{
-        height: 100%;
-      }
-      h1{
-        font-size: 2.6em;
-      }
-      #profile-pic {
-        width: 100%;
-        border-radius: 100%;
-      }
-      .menu ul {
-        padding: 0;
-      }
-      .menu li {
-        list-style-type: none;
-        text-align: left;
-      }
-      .full-height{
-        height: 100%;
-        max-height: 100%;
-      }
-      .half-height{
-        height: 50%;
-      }
-      .content-block{
-       /* position:absolute; */
-       /* left: 50%; */
-       /* top: 50%; */
-       /* height: 50%; */
-       /* line-height: 100%; */
-       /* padding: 50% */
-       display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .key{
-        color: rgb(255, 153, 0);
-      }
-      .fs{
-        font-size: x-large;
-      }
-      .btn-display-right{
-        position: absolute;
-        right: 0%;
-        transform: translate(0%,-50%);
-        top: 50%
-      }
-      .btn-display-left{
-        position: absolute;
-        left: 0%;
-        transform: translate(0%, -50%);
-        top: 50%
-      }
-    
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="container-fluid border border-primary bg-dark text-white full-height">
     <div class="row" id="main-box"> 
@@ -109,8 +47,8 @@
       <aside class="col-sm-8">
         <!-- Asside Box/Right Column for content  -->
         <!-- home -->
-        <div id="home" class="slide full-height content-block">
-          
+        <div id="home" class="slide full-height content-block d-none">
+          <h4 class="top-pos">Home</h3>
           <div class="text-center text-uppercase p-2 w-5">
             <h2><span class="key">Hello! </span> <span id="name">This is Asad</span></h2>
             <p class="fs">Frontend Developer</p>
@@ -119,8 +57,8 @@
 
         </div>
         <!-- About -->
-        <div id="about-me" class="slide full-height content-block">
-          
+        <div id="about-me" class="slide full-height content-block d-none">
+          <h4 class="top-pos">About me</h3>
           <div class="text-left p-5 w-5">
             <h3><span class="key text-uppercase">Who i am?</span></h3>
             <h5>
@@ -133,12 +71,14 @@
                 <li>I'm here to create an appealing and functional website that meets the needs of my clients and their businesses.</li>
               </ul>
             </h5>
-            <!-- <h3><span class="key">Name:</span> <span>Muhammad Asad Saeed</span></h3>
-            <h3><span class="key">Email:</span> <span>am123malikk@gmail.com</span></h3>
-            <h3><span class="key">Phone:</span> <span></span></h3>
-            <h3><span class="key">Dob:</span> <span></span></h3> -->
           </div>
-
+        </div>
+         <!-- Education -->
+        <div id="education" class="slide border full-height content-block">
+          <h4 class="top-pos">Education</h3>
+          <div class="text-center p-5 w-5">
+            asdfasdfasdfsd
+          </div>
         </div>
         <button id="nextSlide" class="btn-display-right"><i class="fa-solid fa-angle-right"></i></button>
         <button id="prevSlide" class="btn-display-left"><i class="fa-solid fa-angle-left"></i></button>
@@ -149,36 +89,6 @@
       </aside>
       <!-- End Main Box -->
     </div>
-    <!-- just testing and understanding: below -->
-   <!--  <img class="mySlides" src="img_snowtops.jpg" style="width:100%">
-  <img class="mySlides" src="img_lights.jpg" style="width:100%">
-  <img class="mySlides" src="img_mountains.jpg" style="width:100%">
-  <img class="mySlides" src="img_forest.jpg" style="width:100%"> -->
-
-    <!-- Sliding Using JS -->
-   <!--  <script>
-      var slideIndex = 1;
-      showDivs(slideIndex);
-      
-      function plusDivs(n) {
-        showDivs(slideIndex += n);
-      }
-      
-      function showDivs(n) {
-        var i;
-        console.log(n + " before loop");
-        var x = document.getElementsByClassName("mySlides");
-        console.log("x length: " + x.length)
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";  
-          console.log(n + "in the loop");
-          console.log(x);
-        }
-        x[slideIndex-1].style.display = "block";  
-      }
-      </script> -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

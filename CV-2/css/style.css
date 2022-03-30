@@ -1,0 +1,62 @@
+#main-box {
+  height: 100%;
+}
+h1 {
+  font-size: 2.6em;
+}
+#profile-pic {
+  width: 100%;
+  border-radius: 100%;
+}
+.menu ul {
+  padding: 0;
+}
+.menu li {
+  list-style-type: none;
+  text-align: left;
+}
+.full-height {
+  height: 100%;
+  max-height: 100%;
+}
+.half-height {
+  height: 50%;
+}
+.content-block {
+  /* position:absolute; */
+  /* left: 50%; */
+  /* top: 50%; */
+  /* height: 50%; */
+  /* line-height: 100%; */
+  /* padding: 50% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.key {
+  color: rgb(255, 153, 0);
+}
+.fs {
+  font-size: x-large;
+}
+.btn-display-right {
+  position: absolute;
+  right: 0%;
+  transform: translate(0%, -50%);
+  top: 50%;
+}
+.btn-display-left {
+  position: absolute;
+  left: 0%;
+  transform: translate(0%, -50%);
+  top: 50%;
+}
+
+.top-pos {
+    color: white;
+    position: absolute;
+    top: 2%;
+    color: aliceblue;
+    font-style: italic;
+}
