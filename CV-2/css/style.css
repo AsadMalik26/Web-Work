@@ -73,3 +73,7 @@ h1 {
 #date {
   font-weight: bold;
 }
+.max-width{
+  width: 100%;
+  max-width: 100%;
+}
