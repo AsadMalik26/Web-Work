@@ -60,3 +60,16 @@ h1 {
     color: aliceblue;
     font-style: italic;
 }
+
+#job-title {
+  color: #1d824c;
+  font-weight: bold;
+  font-size: 2em;
+}
+#company {
+  font-weight: bold;
+  font-size: 2em;
+}
+#date {
+  font-weight: bold;
+}
