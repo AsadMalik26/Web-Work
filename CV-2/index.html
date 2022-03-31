@@ -3,6 +3,8 @@
   <head>
     <title>Portfolio-CV-2 | Bootstrap</title>
     <script src="https://kit.fontawesome.com/8278dbc5e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
@@ -135,21 +137,45 @@
           <h4 class="top-pos">My Services</h3>
             <div class="text-uppercase p-5 w-5">
               <p class="key fs font-weight-bold">Services i provide</p>
-              Frontend Development
-                HTML5
-                Web Designing using CSS (CSS3, CSS4, CSS5)
-                Adaptive/Responsive Web Designing
-              PSD/Figma to HTML/CSS
-              Website Redesigning
-              JavaScript/jQuery
-              Bug Fixing  
+              <ul>
+                <li>Web Designing (HTML, CSS, Bootstrap, JavaScript, jQuery)</li>
+                <li>Adaptive/Responsive Web Designing</li>
+                <li>PSD/Figma to HTML/CSS website</li>
+                <li>Website Redesigning</li>
+                <li>Bug Fixing</li>
+              </ul>
             </div>
         </div>
         <!-- Contact -->
         <div id="contact-me" class="slide full-height content-block">
           <h4 class="top-pos">Contact Me</h3>
             <div class="font-weight-bold fs p-5 w-5">
-              
+              <div class="font-weight-bold fs p-5 w-5">
+                <form>
+                  <label for="fname" class="key">First Name</label> <br>
+                  <input type="text" class="br-5 rounded" id="fname" name="firstname" placeholder="Your name..">
+                  <br>
+
+                  <label for="lname" class="key">Last Name</label><br>
+                  <input type="text" class="br-5 rounded" id="lname" name="lastname" placeholder="Your last name..">
+                  <br>
+
+                  <label for="email" class="key">Email</label> <br>
+                  <input type="text" class="br-5 rounded" id="email" name="email" placeholder="Your Email">
+
+                  <br>
+                  <label for="message" class="key">Message</label> <br>
+                  <input type="text" name="message" id="message" placeholder="Your Message">
+                  <br> <br>
+                  <button class="btn btn-success col-6 br-5 rounded-pill">Submit</button>
+                </form>
+              </div>
+              <span class="key fs">Contact Via</span>
+              <ul class="list-inline pl-3">
+                <li class="list-inline-item"><i class="fa-solid fa-envelope"></i><a href="mailTo:am123malikk@gmail.com"> Email</a></li>
+                <li class="list-inline-item"><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/axad-malik-6362201aa"> LinkedIn</a></li>
+                <li class="list-inline-item"><i class="fa-solid fa-square-phone"></i> +92 306-1402623</li>
+              </ul>
             </div>
         </div>
         <button id="nextSlide" class="btn-display-right"><i class="fa-solid fa-angle-right"></i></button>
