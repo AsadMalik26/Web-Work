@@ -3,8 +3,6 @@
   <head>
     <title>Portfolio-CV-2 | Bootstrap</title>
     <script src="https://kit.fontawesome.com/8278dbc5e2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="<link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
@@ -35,14 +33,14 @@
           <p>Web Developer</p>
         </div>
         <div class="menu pl-5 pr-5 pt-4">
-          <ul>
-            <li id="home"><i class="fa fa-home"></i> Home</a></li>
-            <li id="about"><i class="fa fa-info-circle"></i> About Me</a></li>
-            <li id="edu"><i class="fa fa-user-graduate"></i> Education</a></li>
-            <li id="skills"><i class="fa fa-laptop-code"></i> My Skills</a></li>
-            <li id="portfolio"><i class="fa-solid fa-award"></i> Portfolio</a></li>
-            <li id="services"><i class="fa-solid fa-hand-holding-dollar"></i></i> Services</a></li>
-            <li id="contact"><i class="fa-solid fa-address-card"></i> Contact Me</a></li>
+          <ul id="links">
+            <li class="home"><i class="fa fa-home"></i> Home</a></li>
+            <li class="about"><i class="fa fa-info-circle"></i> About Me</a></li>
+            <li class="edu"><i class="fa fa-user-graduate"></i> Education</a></li>
+            <li class="skills"><i class="fa fa-laptop-code"></i> My Skills</a></li>
+            <!-- <li class="portfolio"><i class="fa-solid fa-award"></i> Portfolio</a></li> -->
+            <li class="services"><i class="fa-solid fa-hand-holding-dollar"></i></i> Services</a></li>
+            <li class="contact"><i class="fa-solid fa-address-card"></i> Contact Me</a></li>
           </ul>
         </div>
       </aside>
@@ -54,12 +52,12 @@
           <div class="text-center text-uppercase p-2 w-5">
             <h2><span class="key">Hello! </span> <span id="name">This is Asad</span></h2>
             <p class="fs">Frontend Developer</p>
-              <button class="btn btn-success col-12 br-5 rounded-pill" type="button" >Contact Me</button>
+              <button class="contact btn btn-success col-12 br-5 rounded-pill" type="button" >Contact Me</button>
           </div>
 
         </div>
         <!-- About -->
-        <div id="about-me" class="slide full-height content-block d-none">
+        <div id="about" class="slide full-height content-block d-none">
           <h4 class="top-pos">About me</h3>
           <div class="text-left p-5 w-5">
             <h3><span class="key text-uppercase">Who i am?</span></h3>
@@ -147,10 +145,10 @@
             </div>
         </div>
         <!-- Contact -->
-        <div id="contact-me" class="slide full-height content-block">
+        <div id="contact" class="slide full-height content-block">
           <h4 class="top-pos">Contact Me</h3>
-            <div class="font-weight-bold fs p-5 w-5">
-              <div class="font-weight-bold fs p-5 w-5">
+            <div class="font-weight-bold fs p-3 w-5">
+              <div class="font-weight-bold fs p-3 w-5">
                 <form>
                   <label for="fname" class="key">First Name</label> <br>
                   <input type="text" class="br-5 rounded" id="fname" name="firstname" placeholder="Your name..">
@@ -165,7 +163,7 @@
 
                   <br>
                   <label for="message" class="key">Message</label> <br>
-                  <input type="text" name="message" id="message" placeholder="Your Message">
+                  <input type="text" class="rounded" name="message" id="message" placeholder="Your Message">
                   <br> <br>
                   <button class="btn btn-success col-6 br-5 rounded-pill">Submit</button>
                 </form>
@@ -178,14 +176,31 @@
               </ul>
             </div>
         </div>
+
         <button id="nextSlide" class="btn-display-right"><i class="fa-solid fa-angle-right"></i></button>
         <button id="prevSlide" class="btn-display-left"><i class="fa-solid fa-angle-left"></i></button>
-        <!-- <button id="addBtn">Add Todo</button> -->
-        <!-- <button class="carousel-control-next btn-display-right" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span></button> -->
       </aside>
       <!-- End Main Box -->
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
