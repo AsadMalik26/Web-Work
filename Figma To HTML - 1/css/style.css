@@ -1,0 +1,60 @@
+.centerc ul {
+  /* display: block;
+    justify-content: center;
+    text-align: center;
+    background-color: aliceblue;
+    padding-top: 1rem;
+    padding-bottom: 1rem; */
+}
+.centerc ul li {
+  /* display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: bold; */
+}
+*{
+    box-sizing: border-box;
+}
+a {
+  color: black;
+}
+
+span.nav-menu{
+    vertical-align: baseline;
+    vertical-align: -webkit-baseline-middle;
+}
+nav {
+  padding: 1rem 0;
+  background: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+nav a {
+  margin: 3em;
+}
+
+nav .logo{
+    /* float: left;
+    margin-left: 3.5em; */
+    position: relative;
+    right: 10em;
+}
+nav img {
+    width: 3rem;
+}
+nav .profile{
+    /* float: right;
+    margin-right: 3.5em;
+    clear: right; */
+    position: relative;
+    left: 10em;
+}
+
+nav img{
+    border-radius: 50%;
+}
+
+.greeting{
+    min-height: 70vh;
+    background: whitesmoke;
+}

@@ -1,0 +1,7 @@
+What is node?
+HTTP request rather than TCP DB request
+Data hiding
+Logic Hiding
+Apply bussiness Logic
+Authorise users etc
+in short words: Secure Decision Making 
