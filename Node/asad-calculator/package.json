@@ -1,0 +1,14 @@
+{
+  "name": "asad-calculator-sample",
+  "version": "1.0.0",
+  "description": "This is just for testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "calculator"
+  ],
+  "author": "asad-saeed",
+  "license": "ISC"
+}

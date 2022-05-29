@@ -1,1 +1,6 @@
-{}
+{
+  "dependencies": {
+    "asad-calculator-sample": "^1.0.0",
+    "jshint": "^2.13.4"
+  }
+}
